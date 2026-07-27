@@ -1,300 +1,100 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>당산 코인노래방 가이드 – 정보</title>
-    <meta name="description" content="당산 코인노래방, 처음이면 이거 보세요. 가격, 위치, 시설 꿀팁까지! 당산역 주변 코인노래방 완전 정복 가이드.">
-    <meta name="keywords" content="당산 코인노래방, 당산 코인노래방 정보, 코인노래방 가격, 당산역 코인노래방, 노래방 꿀팁, 당산 놀거리">
-    <link rel="canonical" href="https://t3b06-ds-coin-guide-1.vercel.app/info">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <!-- OG -->
-    <meta property="og:locale" content="ko_KR">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="당산 코인노래방 가이드 – 정보">
-    <meta property="og:description" content="당산 코인노래방, 처음이면 이거 보세요. 가격, 위치, 시설 꿀팁까지!">
-    <meta property="og:url" content="https://t3b06-ds-coin-guide-1.vercel.app/info">
-    <meta property="og:site_name" content="당산 코인노래방 가이드">
-    <meta property="og:image" content="https://t3b06-ds-coin-guide-1.vercel.app/og-image.jpg">
-    <style>
-        /* Brutalist reset & base */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background: #f5f0e8;
-            color: #111;
-            line-height: 1.5;
-            min-height: 100vh;
-        }
-        /* full bleed containers */
-        .container-full {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .section {
-            padding: 60px 0;
-        }
-        /* typography */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-        h1 {
-            font-size: 3.5rem;
-            line-height: 1.1;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 30px;
-            border-bottom: 4px solid #111;
-            padding-bottom: 10px;
-        }
-        h3 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-        }
-        p {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
-        }
-        a {
-            color: #111;
-            text-decoration: underline wavy #f0d200;
-        }
-        a:hover {
-            color: #f0d200;
-            text-decoration: underline wavy #111;
-        }
-        /* border & texture */
-        .brut-border {
-            border: 4px solid #111;
-            box-shadow: 8px 8px 0 #111;
-        }
-        .brut-card {
-            background: #fff;
-            padding: 30px;
-            border: 4px solid #111;
-            box-shadow: 6px 6px 0 #111;
-            margin-bottom: 30px;
-        }
-        .brut-card:hover {
-            transform: translate(-2px, -2px);
-            box-shadow: 10px 10px 0 #111;
-        }
-        /* 네비게이션 */
-        nav {
-            background: #111;
-            color: #f0d200;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            border-bottom: 4px solid #f0d200;
-        }
-        nav .container-full {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav .logo {
-            font-size: 1.8rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            color: #f0d200;
-        }
-        nav .logo a {
-            color: #f0d200;
-            text-decoration: none;
-        }
-        nav .menu {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-        nav .menu li a {
-            color: #f0d200;
-            text-decoration: none;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            letter-spacing: 1px;
-        }
-        nav .menu li a:hover {
-            color: #fff;
-            text-decoration: underline;
-        }
-        .hamburger {
-            display: none;
-            background: none;
-            border: none;
-            color: #f0d200;
-            font-size: 2rem;
-            cursor: pointer;
-        }
-        /* 히어로 섹션 */
-        .hero {
-            background: #f0d200;
-            padding: 80px 0;
-            border-bottom: 6px solid #111;
-        }
-        .hero h1 {
-            font-size: 4rem;
-            color: #111;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            font-weight: 500;
-        }
-        /* 푸터 */
-        footer {
-            background: #111;
-            color: #f0d200;
-            padding: 40px 0;
-            text-align: center;
-            border-top: 4px solid #f0d200;
-        }
-        footer a {
-            color: #f0d200;
-        }
-        /* FAQ */
-        .faq-item {
-            margin-bottom: 20px;
-        }
-        .faq-question {
-            background: #111;
-            color: #f0d200;
-            padding: 15px 20px;
-            font-weight: 700;
-            cursor: pointer;
-            border: 3px solid #111;
-        }
-        .faq-answer {
-            padding: 20px;
-            background: #fff;
-            border: 3px solid #111;
-            border-top: none;
-        }
-        /* 반응형 */
-        @media (max-width: 768px) {
-            h1 { font-size: 2.2rem; }
-            h2 { font-size: 1.8rem; }
-            .hero h1 { font-size: 2.5rem; }
-            nav .menu {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background: #111;
-                padding: 20px;
-                gap: 15px;
-            }
-            nav .menu.active {
-                display: flex;
-            }
-            .hamburger {
-                display: block;
-            }
-        }
-        @media (min-width: 769px) {
-            .hamburger {
-                display: none;
-            }
-            nav .menu {
-                display: flex !important;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>당산 코인노래방 가이드 — 정보</title>
+  <meta name="description" content="당산 코인노래방을 처음 찾는 분들을 위한 상세 정보 페이지. 지역 특성, 이용 전 체크리스트, 인원·시간·목적별 맞춤 선택 기준을 제공합니다.">
+  <meta name="keywords" content="당산 코인노래방, 코인노래방 정보, 당산 노래방 가이드, 방탄 코인노래방, 당산 노래방 팁">
+  <link rel="canonical" href="https://dangsan-song-zone.mapo-room-guide.xyz/about.html">
+  <meta property="og:title" content="당산 코인노래방 가이드 — 정보">
+  <meta property="og:description" content="당산 코인노래방을 처음 찾는 분들을 위한 상세 정보 페이지. 지역 특성, 이용 전 체크리스트, 인원·시간·목적별 맞춤 선택 기준을 제공합니다.">
+  <meta property="og:url" content="https://dangsan-song-zone.mapo-room-guide.xyz/about.html">
+  <meta property="og:type" content="website">
+  <!-- 기존 CSS 파일은 그대로 유지됩니다 -->
+  <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <!-- 네비게이션 -->
-    <nav>
-        <div class="container-full">
-            <div class="logo"><a href="https://t3b06-ds-coin-guide-1.vercel.app/">당산코인🎤</a></div>
-            <button class="hamburger" onclick="document.querySelector('nav .menu').classList.toggle('active')">☰</button>
-            <ul class="menu">
-                <li><a href="https://t3b06-ds-coin-guide-1.vercel.app/">홈</a></li>
-                <li><a href="https://t3b06-ds-coin-guide-1.vercel.app/info">정보</a></li>
-                <li><a href="https://t3b06-ds-coin-guide-1.vercel.app/price">가격</a></li>
-                <li><a href="https://t3b06-ds-coin-guide-1.vercel.app/review">리뷰</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <!-- 히어로 섹션 -->
-    <section class="hero">
-        <div class="container-full">
-            <h1>당산 코인노래방<br>정보 한 방에!</h1>
-            <p>처음 가도, 자주 가도 모르는 꿀팁 다 모았어. 내가 직접 부딪혀본 경험담 + 실전 정보. 이거 보고 가면 노래방 고민 끝!</p>
-        </div>
+  <header class="header">
+    <h1 class="t-img-yrew">당산 코인노래방 가이드</h1>
+    <p class="t-img-yrew">당산 지역에서 나만의 노래방 시간을 만들고 싶은 모든 분들을 위한 종합 안내</p>
+  </header>
+
+  <nav class="nav-present responsive-768">
+    <ul>
+      <li><a href="/index.html">홈</a></li>
+      <li><a href="/region.html">지역별 가이드</a></li>
+      <li><a href="/genre.html">업종별 비교</a></li>
+      <li><a href="/info.html">정보</a></li>
+      <li><a href="/faq.html">FAQ</a></li>
+      <li><a href="/contact.html">문의</a></li>
+    </ul>
+  </nav>
+
+  <main class="t-img-yrew">
+
+    <!-- 개요 및 기본 정보 -->
+    <section class="v-item-65ru">
+      <h2>당산 코인노래방, 기본 개념 정리</h2>
+      <p>당산은 지하철 2호선·5호선이 교차하는 교통 요지라서, 친구 모임이나 직장 회식 후에 손쉽게 방문할 수 있는 코인노래방이 다수 포진해 있습니다. 코인노래방은 시간당 요금을 코인(혹은 현금)으로 결제하는 방식으로, 입장 전 별도 예약 없이 바로 이용이 가능한 것이 특징입니다. 특히 당산은 주거·상업 복합 지역이라 다양한 연령층이 어울리는 분위기의 방이 많이 있습니다.</p>
+      <p>하지만 코인노래방마다 운영 시간, 최소 이용 인원, 방음 설비 수준이 다르기 때문에, 방문 전 ‘내가 가장 중요하게 생각하는 요소’를 명확히 하는 것이 필요합니다. 이 페이지에서는 그런 선택 기준을 상황별로 세분화해 제시하고, 실제 방문 시 체크해야 할 항목들을 상세히 안내합니다.</p>
     </section>
 
-    <!-- 정보 섹션 -->
-    <section class="section">
-        <div class="container-full">
-            <h2>📍 위치 & 접근성</h2>
-            <div class="brut-card">
-                <h3>당산역 3번 출구 도보 1분</h3>
-                <p>여기 진짜 꿀자리야. 당산역 3번 출구 나와서 바로 보이는 골목 안에 코인노래방이 3~4개 밀집해 있어. 야, 친구랑 약속 잡기엔 이만한 데가 없어. 지하철 내리자마자 1분이면 노래방 앞이야. 비 오는 날도 걱정 no!</p>
-                <p>내가 처음 갔을 땐 길 헤맸는데, 알고 보니 3번 출구에서 나와서 GS25 편의점 옆 골목으로 쭉 들어가면 돼. 네이버 지도에 '당산 코인노래방' 치면 바로 나오니까 참고해.</p>
-            </div>
-
-            <h2>⏰ 운영 시간 & 시스템</h2>
-            <div class="brut-card">
-                <h3>24시간 무인 운영</h3>
-                <p>대부분 24시간 무인 시스템이야. 심야에 가도 사람 없을 때가 많아서 혼코노(혼자 코인노래방) 하기도 좋아. 나는 새벽 2시쯤 가봤는데, 완전 조용하고 방도 깨끗했어.</p>
-                <p>참고로 결제는 현금/카드 둘 다 되는데, 카드는 1,000원 단위 충전만 되는 곳이 있으니 현금 좀 들고 가는 게 안심됨. 500원 동전도 잘 받아주니까 동전도 챙겨가!</p>
-            </div>
-
-            <h2>🎤 시설 & 장비</h2>
-            <div class="brut-card">
-                <h3>최신식 TJ미디어 반주기</h3>
-                <p>당산 코인노래방 대부분 TJ미디어 반주기 써. 곡도 엄청 많고, 리모컨도 잘 돼. 근데 가끔 마이크 음질이 별로인 방이 있더라고. 내가 알려주는 팁: 들어가기 전에 문 열고 마이크 한 번 불어봐. 잡음 심하면 바로 다른 방으로 바꿔!</p>
-                <p>스피커는 대부분 괜찮은 편인데, 방마다 성향이 달라. 1~2번 방이 보통 제일 좋은 장비 쓰니까 참고해. 그리고 에어컨 진짜 빵빵해. 여름에 갔다가 너무 추워서 옷 하나 더 입을 걸 그랬어.</p>
-            </div>
-
-            <h2>💰 가격 정보</h2>
-            <div class="brut-card">
-                <h3>30분에 2,000~3,000원</h3>
-                <p>기본 30분에 2,000원 정도 하는 곳이 많고, 1시간은 4,000원이야. 야, 이게 왜 꿀이냐면 일반 노래방은 1시간에 만 원인데 여긴 반값도 안 돼. 게다가 이벤트 하는 곳은 30분에 1,500원도 있어.</p>
-                <p>내가 자주 가는 '뮤직코인 당산점'은 평일 오후 타임에 1시간 3,000원 이벤트 하더라. 자세한 가격 비교는 <a href="https://t3b06-ds-coin-guide-1.vercel.app/price">가격 페이지</a> 보면 실시간으로 업데이트돼.</p>
-            </div>
-
-            <h2>🧼 청결 & 관리</h2>
-            <div class="brut-card">
-                <h3>사장님 성격 따라 천차만별</h3>
-                <p>솔직히 말하면, 무인이라서 방마다 상태가 좀 달라. 내 경험상 당산역 근처 '코인락커' 체인은 청결이 좋은 편이야. 매트도 깔끔하고, 방음도 잘 돼. 반면에 오래된 곳은 카펫에 얼룩 있고 쿠션감도 별로야.</p>
-                <p>내 팁: 들어가서 일단 신발 벗고 바닥 한 번 보자. 신발장 옆에 슬리퍼 비치된 곳이 대부분이니까 슬리퍼 신고 들어가. 그리고 방 안에 손 소독제 있으면 쓰는 게 좋아. 마이크 커버도 챙겨 가는 놈이 젤 빠삭함.</p>
-            </div>
-        </div>
+    <!-- 인원·시간별 선택 기준 -->
+    <section class="v-item-65ru">
+      <h2>인원·시간·목적에 맞는 방 선택 팁</h2>
+      <p><strong>소규모(2~4명) 모임</strong>이라면, 개인부스가 따로 있는 소형 방이 경제적입니다. 1인당 평균 비용이 2,000원 수준으로 저렴하고, 방음이 잘 되어 있어 주변 소음이 적습니다. 이때는 ‘프리미엄 사운드’ 옵션이 있는 방을 선택하면, 마이크와 스피커 품질 차이 때문에 노래가 더 살아납니다.</p>
+      <p><strong>대규모(5명 이상) 파티</strong>는 대형 방이나 파티룸을 고려하세요. 최소 이용 시간은 2시간 이상이며, 예약이 필수인 경우가 많습니다. 이때는 ‘음료 무제한’ 패키지나 ‘추가 마이크’ 옵션을 체크하면, 인원 수에 맞춰 효율적으로 이용할 수 있습니다.</p>
+      <p>또한 <strong>시간대별 요금 변동</strong>을 놓치지 마세요. 평일 낮시간(10시~16시)에는 ‘뱃살 할인’이 적용돼 30%까지 저렴해집니다. 반대로 금요일 저녁이나 주말은 프리미엄 요금이 적용되므로, 예산이 한정돼 있다면 일찍 시작하거나 평일 저녁을 노리는 것이 좋습니다.</p>
     </section>
 
-    <!-- FAQ 섹션 -->
-    <section class="section" style="background: #e8e0d0;">
-        <div class="container-full">
-            <h2>❓ 자주 묻는 질문</h2>
-            <div class="faq-item">
-                <div class="faq-question">코인노래방 처음인데 어떻게 이용하나요?</div>
-                <div class="faq-answer">
-                    <p>야, 완전 간단해! 문 열고 들어가서 빈 방 찾아 들어가. 방 안에 기계가 있는데, 거기에 돈 넣고 원하는 시간 선택하면 돼. 보통 30분~1시간 단위야. 그 다음 리모컨으로 노래 검색하고 부르면 끝! 어렵지 않으니까 겁먹지 마.</p>
-                </div>
-            </div>
-            <div class="faq-item">
-                <div class="fa
+    <!-- 시설·서비스 체크리스트 -->
+    <section class="v-item-65ru">
+      <h2>방문 전 확인해야 할 시설·서비스 체크리스트</h2>
+      <p>1) <strong>음향 설비</strong> – 최신 디지털 믹서와 무선 마이크가 구비돼 있는지 확인합니다. 특히 ‘HD 사운드’ 라벨이 붙은 방은 음질이 뛰어나며, 노래 감상 경험을 크게 끌어올립니다.</p>
+      <p>2) <strong>청결 상태</strong> – 방 내부와 화장실, 휴게실 청결도가 높은 곳은 장시간 이용에도 불쾌감이 없습니다. 입구에 청소 도구가 비치돼 있거나, 직원이 정기적으로 청소 기록을 게시하는 경우가 신뢰도가 높습니다.</p>
+      <p>3) <strong>결제 방식</strong> – 코인 외에 카드, 모바일 결제(Toss, KakaoPay) 지원 여부를 확인합니다. 현금만 받는 경우는 현금 소지량을 미리 준비해야 하며, 결제 오류 시 대처 방법을 직원에게 물어보는 것이 좋습니다.</p>
+      <p>4) <strong>추가 서비스</strong> – 음료, 간식, 포장 마시멜로 등 부가 서비스가 포함된 패키지가 있는지 살펴보세요. 특히 ‘무제한 음료’ 옵션은 가격 대비 만족도가 높아 회식 때 인기가 많습니다.</p>
+    </section>
+
+    <!-- 지역별 특성 및 추천 코인노래방 -->
+    <section class="v-item-65ru">
+      <h2>당산 지역별 코인노래방 특성 및 추천 리스트</h2>
+      <p>당산역 1번 출구 인근에는 ‘노래방 24시’와 ‘뱅크노래’가 밀집해 있습니다. 두 곳 모두 24시간 운영이라 언제든 방문 가능하고, 방음 관리가 잘 되어 있어 주변에 사는 이웃에게 소음 민원 위험이 낮습니다.</p>
+      <p>반면 당산역 2번 출구 쪽에는 ‘히트코인’과 ‘플레이그라운드’가 위치해 있습니다. 이곳은 최신 최신곡 업데이트 주기가 빠르고, 대형 파티룸이 있어 팀 회식이나 동아리 연습에 적합합니다. 특히 ‘플레이그라운드’는 ‘테마 방’(레트로, K‑POP, 뮤지컬) 옵션을 제공해 색다른 분위기를 연출할 수 있습니다.</p>
+      <p>마지막으로 당산역 주변 골목에 숨은 ‘소울노래’는 분위기와 가격이 가장 친절한 편이며, 1인 실시간 녹음 서비스가 별도로 제공돼 개인 연습용으로 인기가 높습니다.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="v-item-65ru">
+      <h2>자주 묻는 질문(FAQ)</h2>
+      <p><strong>Q1. 코인노래방은 예약이 필요한가요?</strong><br>
+      대부분은 ‘선착순 입장’이지만, 대형 파티룸이나 프리미엄 방은 사전 예약이 필요합니다. 온라인 예약 시스템을 제공하는 경우는 홈페이지 혹은 전화로 미리 확인하는 것이 안전합니다.</p>
+      <p><strong>Q2. 노래 선택은 어떻게 하나요?</strong><br>
+      각 방에 터치스크린 키오스크가 설치돼 있어, 노래 검색 → 선택 → 바로 재생이 가능합니다. 사전 앱(‘노래방 V2’)을 설치하면, 원하는 곡을 미리 저장해 두고 빠르게 부를 수 있습니다.</p>
+      <p><strong>Q3. 마이크가 고장났을 때는?</strong><br>
+      직원 호출 버튼이 방 안에 비치돼 있으니, 즉시 눌러주세요. 대부분 5분 이내에 교체해 주며, 교체 비용은 무료입니다.</p>
+      <p><strong>Q4. 음료와 음식은 직접 가져가도 되나요?</strong><br>
+      대부분의 코인노래방은 외부 음식 반입을 금지하고 있습니다. 내부에서 제공하는 음료·스낵을 이용하거나, ‘외부 음식 주문’ 서비스를 이용하면 추가 비용 없이 즐길 수 있습니다.</p>
+    </section>
+
+    <!-- 마무리 안내 -->
+    <section class="v-item-65ru">
+      <h2>당산 코인노래방 이용 시 최종 체크리스트</h2>
+      <p>방문 전 스마트폰에 ‘노래방 V2’ 앱을 설치하고, 원하는 곡 리스트를 미리 저장해 두면 입장 직후 바로 부를 수 있어 시간 활용도가 높아집니다. 또한, 입장 시 ‘이용 시간·인원·목적’을 확인하고, 최소 이용 시간보다 짧게 머무를 경우 추가 요금 정책을 사전에 확인하세요.</p>
+      <p>마지막으로, 방음과 청결 상태, 결제 옵션을 한눈에 비교할 수 있는 체크리스트를 프린트하거나 메모 앱에 저장해 두면, 당산 코인노래방을 보다 스마트하게 즐길 수 있습니다. 즐거운 노래시간 되세요!</p>
+    </section>
+
+    <div class="t-btn-wwi2">
+      <a href="/contact.html" class="n-ico-pu96"><span>문의하기</span></a>
+    </div>
+
+  </main>
+
+  <footer class="n-ico-8rc4">
+    <p>© 2026 당산 코인노래방 가이드. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
